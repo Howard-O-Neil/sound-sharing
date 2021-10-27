@@ -1,17 +1,17 @@
 {
-  "name": "react-typescript-skeleton",
+  "name": "sound-sharing-platform",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "react-typings": "typings install --global --save dt~react && typings install --global --save dt~react-dom",
-    "enzyme-typings": "typings install --global --save dt~enzyme",
-    "jest-typings": "typings install --global --save dt~jest",
-    "full-install": "npm install && npm run react-typings && npm run jest-typings && npm run enzyme-typings",
+    "//": "typescript DefinitelyTyped: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types",
+    "react-typings": "npm install @types/react && npm install @types/react-dom",
+    "jest-typings": "npm install @types/jest",
+    "full-install": "npm install && npm run react-typings && npm run jest-typings",
     "build": "webpack",
     "lint": "tslint  --format verbose 'src/**/*.ts?(x)'",
     "test": "jest",
-    "start": "webpack-dev-server --port=3000  --hot --inline"
+    "start": "webpack --watch"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -25,28 +25,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benbraou/react-typescript-skeleton.git"
+    "url": "git+https://github.com/Howard-O-Neil/sound-sharing.git"
   },
-  "author": "Oussama Ben Brahim",
+  "author": "Howard O'Neil",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benbraou/react-typescript-skeleton/issues"
+    "url": "https://github.com/Howard-O-Neil/sound-sharing/issues"
   },
-  "homepage": "https://github.com/benbraou/react-typescript-skeleton#readme",
+  "homepage": "https://github.com/Howard-O-Neil/sound-sharing",
   "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "@types/jest": "^27.0.2",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "jest": "^27.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "enzyme": "^2.4.1",
-    "jest-cli": "^15.1.1",
-    "react-addons-test-utils": "^15.3.2",
-    "source-map-loader": "^0.1.5",
-    "ts-loader": "^0.8.2",
-    "tslint": "^3.15.1",
-    "typescript": "^2.0.3",
-    "typings": "^1.4.0",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
+    "eslint": "^8.1.0",
+    "jest-cli": "^27.3.1",
+    "source-map-loader": "^3.0.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.4",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
   }
 }
