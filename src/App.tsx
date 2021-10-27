@@ -1,12 +1,36 @@
 import * as React from "react";
+import { useState } from "react";
 
-export interface AppProps extends React.Props<any> {
-    message: string;
+interface AppProps {
+  message: string;
+}
+
+const STATUS = {
+  HOVERED: "hovered",
+  NORMAL: "normal",
 };
 
-export class App extends React.Component<AppProps, any> {
-    render() {
-        let {message} = this.props;
-        return <h1>{message}</h1>;
-    }
-}
+const App = ({ message }: AppProps) => {
+  const [status, setStatus] = useState<string>(STATUS.NORMAL);
+  const [mess, setMess] = useState<string>(message);
+
+  const onMouseEnter = () => {
+    setStatus(STATUS.HOVERED);
+    setMess("Mouse Enter " + message);
+  };
+
+  const onMouseLeave = () => {
+    setStatus(STATUS.NORMAL);
+    setMess(message);
+  };
+
+  return (
+    <div>
+      <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+        {mess}
+      </h1>
+    </div>
+  );
+};
+
+export default App;

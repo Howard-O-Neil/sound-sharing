@@ -1,9 +1,23 @@
-import * as React from "react";
-import { App } from "@/App";
+// import React from 'react';
+// import renderer from 'react-test-renderer';
+// import App from '@/App';
 
-// it("App component is rendered with the label Hello", () => {
-//   const app = shallow(
-//     <App message="Hello" />
+// test('Link changes the class when hovered', () => {
+//   const component = renderer.create(
+//     <Link page="http://www.facebook.com">Facebook</Link>,
 //   );
-//   expect(app.text()).toEqual("Hello");
+//   let tree = component.toJSON();
+//   expect(tree).toMatchSnapshot();
+
+//   // manually trigger the callback
+//   tree.props.onMouseEnter();
+//   // re-rendering
+//   tree = component.toJSON();
+//   expect(tree).toMatchSnapshot();
+
+//   // manually trigger the callback
+//   tree.props.onMouseLeave();
+//   // re-rendering
+//   tree = component.toJSON();
+//   expect(tree).toMatchSnapshot();
 // });
