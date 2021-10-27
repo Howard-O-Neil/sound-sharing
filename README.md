@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 # sound-sharing
 Project Management Course
 =======
-[![Build Status](https://travis-ci.org/benbraou/react-typescript-skeleton.svg?branch=main)](https://travis-ci.org/benbraou/react-typescript-skeleton)
-
-# React TypeScript Skeleton application
-This is a minimalist web application built with react, TypeScript and webpack.  
-Why go through complex starters when all you are looking for is to experiment react and TypeScript?
 
 ## Installation
 
@@ -20,10 +14,14 @@ npm run full-install
 npm run build
 ```
 
-## Starting webpack dev server
+## Starting webpack watch mode
 
 ```
 npm start
+```
+### Starting dev server
+```
+live-server --port=3000 ./dist
 ```
 ## Running tests
 
@@ -40,4 +38,3 @@ http://localhost:3000/
 ```
 npm run lint
 ```
->>>>>>> new-master
