@@ -1,5 +1,4 @@
 # sound-sharing
-=======
 
 ## Installation
 
@@ -7,7 +6,7 @@
 npm run full-install
 ```
 
-## building your application
+## Building your application
 
 ```
 npm run build
