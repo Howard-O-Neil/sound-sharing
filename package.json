@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "config": {
+    "port": "3000"
+  },
   "scripts": {
     "//": "typescript DefinitelyTyped: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types",
     "react-typings": "npm install @types/react && npm install @types/react-dom",
     "jest-typings": "npm install @types/jest",
     "full-install": "npm install && npm run react-typings && npm run jest-typings",
     "build": "tsc --build",
-    "compile": "tsc && webpack build",
+    "compile-prod": "tsc --build && webpack --env production build",
+    "compile-dev": "tsc --build && webpack build",
     "lint": "tslint  --format verbose 'src/**/*.ts?(x)'",
     "test": "jest",
-    "watch": "webpack --watch",
-    "serve": "webpack serve --open"
+    "watch-prod": "webpack --env production --watch",
+    "watch-dev": "webpack --watch",
+    "live": "live-server --port=${npm_package_config_port} ./dist"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -36,6 +41,7 @@
   },
   "homepage": "https://github.com/Howard-O-Neil/sound-sharing",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@types/jest": "^27.0.2",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
@@ -43,6 +49,7 @@
     "jest": "^27.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2",
     "react-test-renderer": "^17.0.2"
   },
   "devDependencies": {
@@ -58,7 +65,11 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "jest-cli": "^27.3.1",
+    "live-server": "^1.2.1",
+    "sass": "^1.43.5",
+    "sass-loader": "^12.3.0",
     "source-map-loader": "^3.0.0",
+    "style-loader": "^3.3.1",
     "typescript": "^4.4.4",
     "webpack": "^5.60.0",
     "webpack-cli": "^4.9.1",

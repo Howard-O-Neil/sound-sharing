@@ -1,36 +1,21 @@
-import * as React from "react";
-import { useState } from "react";
+import React from 'react';
+import Nav from './components/Navbar';
+import {Routes, Route} from 'react-router-dom';
+import './App.scss';
+import Welcome from '@/views/Welcome/Welcome';
 
-interface AppProps {
-  message: string;
-}
+// <Nav/>
+// <Routes>
+//   {/* <Route path=":id" element={<UserProfile />} />
+//   <Route path="me" element={<OwnUserProfile />} /> */}
+// </Routes>
 
-const STATUS = {
-  HOVERED: "hovered",
-  NORMAL: "normal",
-};
-
-const App = ({ message }: AppProps) => {
-  const [status, setStatus] = useState<string>(STATUS.NORMAL);
-  const [mess, setMess] = useState<string>(message);
-
-  const onMouseEnter = () => {
-    setStatus(STATUS.HOVERED);
-    setMess("Mouse Enter " + message);
-  };
-
-  const onMouseLeave = () => {
-    setStatus(STATUS.NORMAL);
-    setMess(message);
-  };
-
+const App = () => {
   return (
-    <div>
-      <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-        {mess}
-      </h1>
+    <div className="App">
+      <Welcome />
     </div>
-  );
+  )
 };
 
 export default App;
