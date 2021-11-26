@@ -1,5 +1,4 @@
-node_modules
-typings
-typings.json
-dist
-.vscode
+**/node_modules
+**/dist
+**/build
+**/.vscode

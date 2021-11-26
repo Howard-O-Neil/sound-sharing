@@ -8,10 +8,12 @@
     "react-typings": "npm install @types/react && npm install @types/react-dom",
     "jest-typings": "npm install @types/jest",
     "full-install": "npm install && npm run react-typings && npm run jest-typings",
-    "build": "webpack",
+    "build": "tsc --build",
+    "compile": "tsc && webpack build",
     "lint": "tslint  --format verbose 'src/**/*.ts?(x)'",
     "test": "jest",
-    "start": "webpack --watch"
+    "watch": "webpack --watch",
+    "serve": "webpack serve --open"
   },
   "jest": {
     "moduleFileExtensions": [

@@ -5,8 +5,8 @@ const ROOT = path.resolve(__dirname, "src");
 const DESTINATION = path.resolve(__dirname, "dist");
 
 module.exports = {
-  mode: "development",
-  watch: true,
+  mode: "production",
+  // watch: true,
   entry: "./src/index.tsx",
 
   context: ROOT,
@@ -32,28 +32,39 @@ module.exports = {
   // Dev tool options for source map
   devtool: "eval",
 
+  // config devserver
+  devServer: {
+    static: './dist'
+  },
+
+  // config watch options
+  watchOptions: {
+    aggregateTimeout: 200,
+    poll: 1000,
+    ignored: ["**/node_modules"],
+  },
+
   // config module
   module: {
     rules: [
+      // load existing source map in libraries into webpack
       {
         enforce: "pre",
         test: /\.js$/,
         use: "source-map-loader",
       },
+      // use babel loader
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: "babel-loader",
       },
+      // load style
       {
         test: /\.(css|scss)$/,
         use: ["style-loader", "css-loader"],
       },
-      {
-        test: /\.tsx?$/,
-        exclude: [/node_modules/],
-        use: "ts-loader",
-      },
+      // load files
       {
         test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
         use: "file-loader",
@@ -61,9 +72,10 @@ module.exports = {
     ],
   },
 
+  // generate index.html from template
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html"),
+      template: path.join(__dirname, "src", "template.html"),
     }),
   ],
 };

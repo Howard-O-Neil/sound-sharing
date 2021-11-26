@@ -5,5 +5,5 @@ import App from "@/App";
 
 ReactDom.render(
   <App message="Sound Sharing" />,
-  document.getElementById("main")
+  document.getElementById("root")
 );
