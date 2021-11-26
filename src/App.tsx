@@ -12,7 +12,7 @@ import Account from '@/views/Account/Account';
 // </Routes>
 
 const child_element = () => {
-  return <div> con cac </div>
+  return <div> boom magic </div>
 }
 
 const App = () => {
