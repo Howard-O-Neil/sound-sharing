@@ -1,0 +1,23 @@
+@import "@/global.scss";
+
+.main-wrapper {
+    width: 80%; 
+    height: 100%;
+
+    display: block;
+    text-align: center;
+    .wrapper {
+        text-align: center;
+    
+        .flex-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .long-ruler {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}

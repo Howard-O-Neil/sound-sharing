@@ -36,9 +36,9 @@ module.exports = (env) => {
     },
 
     // Dev tool watchOptions
-    // eval for production, fastest build
-    // source-map for development, support source map
-    devtool: production_val ? "eval" : "source-map",
+    // false for production, fastest build
+    // source-map for development, support source map, very slow build
+    devtool: production_val ? false : "source-map",
 
     // config watch options
     watchOptions: {

@@ -1,8 +1,9 @@
 import React from 'react';
-import Nav from './components/Navbar';
+import Nav from './components/Navbar/Navbar';
 import {Routes, Route} from 'react-router-dom';
 import './App.scss';
 import Welcome from '@/views/Welcome/Welcome';
+import Account from '@/views/Account/Account';
 
 // <Nav/>
 // <Routes>
@@ -10,10 +11,15 @@ import Welcome from '@/views/Welcome/Welcome';
 //   <Route path="me" element={<OwnUserProfile />} /> */}
 // </Routes>
 
+const child_element = () => {
+  return <div> con cac </div>
+}
+
 const App = () => {
   return (
     <div className="App">
-      <Welcome />
+      <Account child={child_element} />
+      {/* <Welcome /> */}
     </div>
   )
 };
