@@ -6,6 +6,7 @@ import Welcome from '@/views/Welcome/Welcome';
 import Account from '@/views/Account/Account';
 import SignIn from '@/components/SignIn/SignIn';
 import SignUp from '@/components/SignUp/SignUp';
+import Email from '@/components/Email/Email';
 
 // <Nav/>
 // <Routes>
@@ -16,7 +17,7 @@ import SignUp from '@/components/SignUp/SignUp';
 const App = () => {
   return (
     <div className="App">
-      <Account child={SignUp} />
+      <Account child={Email} />
       {/* <Welcome /> */}
     </div>
   )
