@@ -17,8 +17,8 @@ import Email from '@/components/Email/Email';
 const App = () => {
   return (
     <div className="App">
-      <Account child={Email} />
-      {/* <Welcome /> */}
+      
+      
     </div>
   )
 };
