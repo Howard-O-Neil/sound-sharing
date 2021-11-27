@@ -4,6 +4,8 @@ import {Routes, Route} from 'react-router-dom';
 import './App.scss';
 import Welcome from '@/views/Welcome/Welcome';
 import Account from '@/views/Account/Account';
+import SignIn from '@/components/SignIn/SignIn';
+import SignUp from '@/components/SignUp/SignUp';
 
 // <Nav/>
 // <Routes>
@@ -11,14 +13,10 @@ import Account from '@/views/Account/Account';
 //   <Route path="me" element={<OwnUserProfile />} /> */}
 // </Routes>
 
-const child_element = () => {
-  return <div> boom magic </div>
-}
-
 const App = () => {
   return (
     <div className="App">
-      <Account child={child_element} />
+      <Account child={SignUp} />
       {/* <Welcome /> */}
     </div>
   )

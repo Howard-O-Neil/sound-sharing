@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FormHTMLAttributes } from "react";
-import styles from "./SignIn.module.scss";
+import styles from "./SignUp.module.scss";
 
-const SignIn = () => {
+const SignUp = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     console.log(e.currentTarget)
@@ -11,7 +11,7 @@ const SignIn = () => {
 
   return (
     <div>
-      <div className={styles.heading}>To continue, log in to SoundSharing</div>
+      <div className={styles.heading}>Sign up for free to start listening!</div>
       <hr></hr>
       <div>
         <button>
@@ -63,4 +63,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;

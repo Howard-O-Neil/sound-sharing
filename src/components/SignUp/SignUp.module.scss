@@ -1,0 +1,34 @@
+.heading {
+  font-size: large;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.flex-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 0 25px 0 25px;
+  }
+}
+
+.login-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form-wrap {
+    text-align: left;
+    display: block;
+
+    .submit-btn {
+      margin-top: 15px;
+      float: right;
+    }
+  }
+}
+
+.short-ruler {
+    width: 60%;
+}

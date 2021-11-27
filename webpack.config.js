@@ -59,13 +59,23 @@ module.exports = (env) => {
         // use babel loader
         {
           test: /\.(js|jsx|ts|tsx)$/,
-          // exclude: /node_modules/,
+          exclude: /node_modules/,
           use: "babel-loader",
         },
         // load style
         {
-          test: /\.(css|scss)$/,
-          use: ["style-loader", "css-loader", "sass-loader"],
+          test: /\.scss$/,
+          exclude: /node_modules/,
+          use : [
+            { loader: "style-loader" },
+            { loader: "css-loader",
+              options: {
+                import: true,
+                modules: true,
+              }
+            },
+            { loader: "sass-loader" },
+          ]
         },
         // load files
         {
