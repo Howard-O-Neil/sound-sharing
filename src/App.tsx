@@ -10,13 +10,7 @@ import MainGrid from "@/views/MainGrid/MainGrid";
 const App = () => {
   return (
     <div className={styles.App}>
-      {/* <Email /> */}
-      {/* <Header />
-      <SignIn />
-      <SignUp />
-      <Footer /> */}
       <MainGrid />
-      {/* <Welcome /> */}
     </div>
   )
 };

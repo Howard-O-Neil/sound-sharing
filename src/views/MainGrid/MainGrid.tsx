@@ -1,5 +1,7 @@
 import Footer from '@/components/Footer/Footer';
+import ForgotPass from '@/components/ForgotPass/ForgotPass';
 import Header from '@/components/Header/Header';
+import ResendConfirmation from '@/components/ResendConfirmation/ResendConfirmation';
 import SignIn from '@/components/SignIn/SignIn';
 import SignUp from '@/components/SignUp/SignUp';
 import React from 'react';
@@ -13,7 +15,8 @@ const MainGrid = () => {
             
           <div className={styles.appWrapper}>
             {/* <SignIn /> */}
-            <SignUp />
+           {/* <ForgotPass /> */}
+           <ResendConfirmation />
           </div>
            <div className={styles.footerDiv}><Footer /></div>
             
