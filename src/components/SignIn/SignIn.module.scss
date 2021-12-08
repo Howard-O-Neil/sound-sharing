@@ -1,34 +1,105 @@
+.mainPanel {
+  width: 350px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #F0F0F0;
+
+  .subPanel {
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+
+    .facebook {
+      width: 100%;
+      padding: 5px;
+      padding-left: 15px;
+      color: white;
+      background-color: #3961B0;
+      font-size: larger;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      text-align: left;
+      display: flex;
+      align-items: center;      
+    }
+
+    .google {
+      @extend .facebook;
+      background-color: #CA3F3F;
+    }
+
+    .orTxt {
+      margin: 0 auto;
+      text-align: center;
+
+      p {
+        color: #595959
+      }
+    }
+
+    .login-div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      .form-wrap {
+        width: 100%;
+        text-align: left;
+        display: block;
+    
+        .submit-btn {
+          margin-top: 15px;
+          float: right;
+        }
+
+        label {
+          font-size: large;
+          color: #595959;
+          font-weight: 600;
+        }
+
+        input {
+          width: 100%;
+          font-size: large;
+          border-radius: 5px;
+        }
+
+        .checkbox {
+          @extend input;
+          
+          width: 20px;
+          height: 20px;
+        }
+        
+        .divSubmit {
+          margin-top: 10px;
+          width: 100%;
+          text-align: right;
+        }
+
+        .submitBtn {
+          @extend input;
+
+          width: fit-content;
+          background-color: #6A7E49;
+          color: white;
+          padding: 5px;
+          border-radius: 5px;
+        }
+      }
+
+    }
+    a {
+      color: #3394CB;
+      font-size: large;
+    }
+
+  }
+}
+
 .heading {
-  font-size: large;
+  font-size: xx-large;
   font-weight: 600;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.flex-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    margin: 0 25px 0 25px;
-  }
-}
-
-.login-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .form-wrap {
-    text-align: left;
-    display: block;
-
-    .submit-btn {
-      margin-top: 15px;
-      float: right;
-    }
-  }
-}
-
-.short-ruler {
-    width: 60%;
 }

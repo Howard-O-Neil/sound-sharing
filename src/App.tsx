@@ -1,13 +1,6 @@
-import React from 'react';
-import Nav from './components/Navbar/Navbar';
-import {Routes, Route} from 'react-router-dom';
-import './App.scss';
-import Welcome from '@/views/Welcome/Welcome';
-import Account from '@/views/Account/Account';
-import SignIn from '@/components/SignIn/SignIn';
-import SignUp from '@/components/SignUp/SignUp';
-import Email from '@/components/Email/Email';
-
+import React, { ChangeEvent, FormHTMLAttributes } from "react";
+import styles from'./App.module.scss';
+import MainGrid from "@/views/MainGrid/MainGrid";
 // <Nav/>
 // <Routes>
 //   {/* <Route path=":id" element={<UserProfile />} />
@@ -16,9 +9,14 @@ import Email from '@/components/Email/Email';
 
 const App = () => {
   return (
-    <div className="App">
-      
-      
+    <div className={styles.App}>
+      {/* <Email /> */}
+      {/* <Header />
+      <SignIn />
+      <SignUp />
+      <Footer /> */}
+      <MainGrid />
+      {/* <Welcome /> */}
     </div>
   )
 };

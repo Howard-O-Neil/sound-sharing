@@ -5,60 +5,56 @@ const SignIn = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     console.log(e.currentTarget)
-    console.log( e.currentTarget.value)
+    console.log(e.currentTarget.value)
     e.preventDefault()
   }
 
   return (
-    <div>
-      <div className={styles.heading}>To continue, log in to SoundSharing</div>
-      <hr></hr>
-      <div>
-        <button>
+    <div className={styles.mainPanel}>
+      <div className={styles.heading}>Sign In</div>
+      <div className={styles.subPanel}>
+        <button className={styles.facebook}>
           <i className="fab fa-2x fa-facebook"></i>
-          Continue with FACEBOOK
+          &nbsp;Continue with Facebook
         </button>
-      </div>
-      <div>
-        <button>
+        <button className={styles.google}>
           <i className="fab fa-2x fa-google"></i>
-          Continue with GOOGLE
+          &nbsp;Continue with Google
         </button>
+
+        <hr />
+
+        <div className={styles.orTxt}>
+          <p >Or login with email</p>
+        </div>
+
+
+        <div className={styles["login-div"]}>
+          <form onSubmit={handleSubmit} className={styles["form-wrap"]}>
+            <label>Email address</label> <br />
+
+            <input name="email" type="text" /> <br /> <br />
+
+            <label>Password</label> <br />
+
+            <input name="pass" type="text" /> <br /> <br />
+
+            <input name="remember" type="checkbox" className={styles.checkbox} />
+            <label>Remember me</label>
+
+            <div className={styles.divSubmit}>
+              <input className={styles.submitBtn} type="submit" value="LOG IN" /> <br />
+            </div>
+          </form>
+        </div>
+
+        <br />
+        <a href="#">Sign Up?</a> <br />
+        <a href="#">Forgot your password?</a> <br />
+
+        <a href="#">Didn't receive confirmation instruction?</a> <br />
+
       </div>
-      <div className={styles["flex-div"]}>
-        <p>----------</p>
-        <h3>OR</h3>
-        <p>----------</p>
-      </div>
-
-      <div className={styles["login-div"]}>
-        <form onSubmit={handleSubmit} className={styles["form-wrap"]}>
-          <label>Email address</label> <br/>
-          
-          <input name="email" type="text" /> <br/>
-          
-          <label>Password</label> <br/>
-          
-          <input name="pass" type="text" /> <br/>
-          
-          <input name="remember" type="checkbox" />
-          <label>Remember me</label>
-
-          <input className={styles["submit-btn"]} type="submit" value="Login" /> <br/>
-        </form>
-      </div>
-
-      <br />
-      <a href="#">Forgot your password?</a>
-
-      <br /> <br /> <br />
-      <hr className={styles["short-ruler"]}></hr>
-
-      <div className={styles.heading}>You don't have account?</div>
-      <button>
-          <i className="fas fa-2x fa-user-plus"></i>
-          Sign up for SoundSharing
-        </button>
     </div>
   );
 };

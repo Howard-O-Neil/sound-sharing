@@ -1,0 +1,41 @@
+.logo {
+    width: 210px;
+    height: 93px;
+    padding-right: 5px; 
+}
+
+.mainPanel {
+    display: flex;
+    padding: 5px;
+    background-color: black;
+    height: 100%;
+
+    .listBtn {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        padding-top: 15px;
+
+        button {
+            color: white;
+            border: 0;
+            background-color: transparent;
+            margin-right: 20px;
+            height: fit-content;
+            // margin-top: 5px;
+            cursor: grab;
+            font-size: larger;
+            padding: 10px
+        }
+
+        .feedback {
+            @extend button;
+
+            background-color: white;
+            color: black;
+            // padding: 10px;
+            border-radius: 10px;
+            // border-radius: 30%;
+        }
+    }
+}
