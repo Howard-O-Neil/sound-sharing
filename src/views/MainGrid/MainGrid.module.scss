@@ -5,11 +5,12 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto 200px;
+    grid-template-rows: 165px auto 200px;
 
     .headerDiv {
         grid-column: 1;
         grid-row: 1;
+        background-color: black;
     }
 
     .footerDiv {

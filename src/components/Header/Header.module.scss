@@ -8,13 +8,12 @@
     display: flex;
     padding: 5px;
     background-color: black;
-    height: 100%;
 
     .listBtn {
         display: flex;
         justify-content: center;
         // align-items: center;
-        padding-top: 15px;
+        padding-top: 5px;
 
         button {
             color: white;
@@ -38,4 +37,38 @@
             // border-radius: 30%;
         }
     }
+}
+
+.searchBar {
+    padding: 10px;
+    margin-left: 40px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 15px;
+    background-color: #5F5D5D;
+    
+
+    .searchIcon {
+        font-size: large;
+        color: white;
+    }
+
+    input {
+        width: 90%;
+        font-size: large;
+        margin-left: 10px;
+        background-color: transparent;
+        color:  white;
+        outline: none;
+        border: none;
+    }
+}
+
+.mainPanelParent {
+    height: 100%;
+    display: block;
+    background-color: black;
 }
