@@ -1,38 +1,9 @@
 # sound-sharing
 
-## Installation
+Just a simple sound sharing platform
 
-```
-npm run full-install
-```
+| Name |  Url  |
+|:-----|:--------|
+| Backend repos   | https://github.com/Howard-O-Neil/sound-sharing-backend |
+| HLS Stream server repos   |  https://github.com/Howard-O-Neil/sound-sharing-HLS  |
 
-## Building your application
-
-```
-npm run build
-```
-
-## Starting webpack watch mode
-
-```
-npm start
-```
-### Starting dev server
-```
-live-server --port=3000 ./dist
-```
-## Running tests
-
-```
-npm test
-```
-
-## Accessing your application
-
-http://localhost:3000/  
-
-## Linting your code
-
-```
-npm run lint
-```
