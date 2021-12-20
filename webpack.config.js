@@ -40,6 +40,15 @@ module.exports = (env) => {
     // source-map for development, support source map, very slow build
     devtool: production_val ? false : "source-map",
 
+    devServer: {
+      static: {
+        directory: path.join(__dirname, 'dist'),
+      },
+      compress: true,
+      port: 3000,
+      historyApiFallback: true,
+    },
+
     // config watch options
     watchOptions: {
       aggregateTimeout: 200,

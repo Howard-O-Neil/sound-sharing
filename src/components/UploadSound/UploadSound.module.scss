@@ -1,0 +1,94 @@
+.mainPanel {
+    width: 450px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    transform: translateY(20px);
+
+    .header {
+        font-size: xx-large;
+    }
+
+    .header2 {
+        font-size: x-large;
+        display: block;
+    }
+
+    .title {
+        font-size: x-large;
+        width: 95%;
+    }
+
+    .dropZone {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        position: relative;
+        width: 95%;
+        // margin: 0 auto;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: rgba(196, 196, 196, 0.42);
+        border: 4px dashed #D5D5D5;
+
+        .cautionTxt {
+            margin-left: 30px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: x-large;
+            // color: white;
+        }
+    }
+
+    .tagZone {
+        width: 95%;
+        height: 200px;
+        background: rgba(196, 196, 196, 0.42);
+        border: 4px dashed #D5D5D5;
+        // margin: 0 auto;
+        font-size: large;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: row;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+        
+        .tag {
+            width: fit-content;
+            margin: 5px;
+            padding: 5px;
+            background-color: white;
+            border: 4px dashed #D5D5D5;
+            
+            button {
+                margin: 3px;
+                padding: 2px;
+
+                .deleteTag {
+                    font-size: larger;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+    .endDiv {
+        width: 97%;
+
+        .submitBtn {
+            float: right;
+            font-size: x-large;
+            width: fit-content;
+            background-color: #6A7E49;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+}  

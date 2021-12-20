@@ -5,7 +5,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 165px auto 200px;
+    grid-template-rows: 150px auto 200px;
 
     .headerDiv {
         grid-column: 1;
@@ -22,7 +22,7 @@
     .appWrapper {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
     }
 }

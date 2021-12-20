@@ -1,0 +1,30 @@
+======= Top genre =======
+
+<div className={styles.genresDiv}>
+{[...Array(3)].map((x, _) => (
+    <div style={{ width: "10px" }}></div>
+))}
+
+<h1>Top Genres</h1>
+
+{[...Array(3)].map((x, _) => (
+    <div style={{ width: "10px" }}></div>
+))}
+
+<div className={styles.genreList}>
+    {[...Array(5)].map((x, _) => (
+    <div className={styles.genre}>Breaks</div>
+    ))}
+
+    <button>
+    Browse more&nbsp;
+    <i className="fas fa-chevron-down"></i>
+    </button>
+    {/* <div className={styles.genre}>
+            Breaks
+        </div> */}
+</div>
+</div>
+
+<hr className={styles.pageSplitHorizontal}/>
+

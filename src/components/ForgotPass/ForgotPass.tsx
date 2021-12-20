@@ -28,10 +28,10 @@ const ForgotPass = () => {
         </div>
 
         <br />
-        <a href="#">Sign Up?</a> <br />
-        <a href="#">Forgot your password?</a> <br />
+        <a href="/sign-up">Sign Up?</a> <br />
+        <a href="/forgot-password">Forgot your password?</a> <br />
 
-        <a href="#">Didn't receive confirmation instruction?</a> <br />
+        <a href="/resend-confirmation">Didn't receive confirmation instruction?</a> <br />
 
       </div>
     </div>

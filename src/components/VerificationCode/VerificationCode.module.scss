@@ -1,0 +1,73 @@
+.mainPanel {
+  width: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #F0F0F0;
+
+  .subPanel {
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+
+    .some-caution {
+      text-align: left;
+      font-size: large;
+    }
+
+    .just-a-div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      .form-wrap {
+        width: 100%;
+        text-align: left;
+        display: block;
+    
+        .submit-btn {
+          margin-top: 15px;
+          float: right;
+        }
+
+        label {
+          font-size: large;
+          color: #595959;
+          font-weight: 600;
+        }
+
+        input {
+          width: 100%;
+          font-size: large;
+          border-radius: 5px;
+        }
+        
+        .divSubmit {
+          margin-top: 10px;
+          width: 100%;
+        }
+
+        .submitBtn {
+          @extend input;
+
+          background-color: #6A7E49;
+          color: white;
+          padding: 5px;
+          border-radius: 5px;
+        }
+      }
+
+    }
+    a {
+      color: #3394CB;
+      font-size: large;
+    }
+
+  }
+}
+
+.heading {
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
